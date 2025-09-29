@@ -269,8 +269,22 @@
             <button id="call-btn-9" class="btn text-white bg-[#00A63E] w-[50%] rounded-lg"><i class="fa-solid fa-phone"></i><span>Call</span></button>
           </div>
         </div>
-
       </div>
+       <!-- call history section by aside  -->
+      <aside class="call-history bg-white p-6 rounded-xl shadow-[0_4px_6px_rgba(0,0,0,0.2)]">
+        <div class="flex items-center justify-between mb-[16px]">
+          <div class="flex items-center gap-2">
+            <i class="fa-regular fa-clock"></i>
+            <h1 class="font-bold">Call History</h1>
+          </div>
+          <div>
+            <button id="clear-btn" class="btn rounded-[50px] px-[36px] py-[12px] bg-[#00A63E] text-white">Clear</button>
+          </div>
+        </div>
+        <div id="history-parent" class="flex flex-col gap-2"></div>
+      </aside>
+    </section>
+  </main>
   <!-- your scripts -->
   <script src="./script.js"></script>
 </body>
