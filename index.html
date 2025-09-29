@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Tailwind and Daisy UI CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- fontawesome cdn  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Main</title>
+</head>
+
+<body class="antialiased bg-[#F5FFF6]">
+  <main>
+    <!-- Header Section -->
+    <header class="border-b border-black/5 bg-white">
+      <nav
+        class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+        <div class="flex items-center gap-3">
+          <img class="h-10 w-10 sm:h-12 sm:w-12" src="./assets/logo.png" alt="Emergency Service logo" />
+          <h1 class="text-[#006747] font-bold text-xl sm:text-2xl leading-tight">
+            Emergency<br class="hidden sm:block" />Service
+          </h1>
+        </div>
+        <div class="flex items-center justify-between gap-3 sm:gap-4 overflow-x-auto md:overflow-visible">
+          <div class="flex items-center bg-[#41ff6b1a] px-4 py-2 sm:px-6 sm:py-3 font-semibold rounded-full gap-2 shrink-0">
+            <p id="heart-number">0</p>
+            <img class="h-6 w-6" src="./assets/heart.png" alt="favorites" />
+          </div>
+
+          <div class="flex items-center bg-[#41ff6b1a] px-4 py-2 sm:px-6 sm:py-3 font-semibold rounded-full gap-2 shrink-0">
+            <p id="call-credit">100</p>
+            <img class="h-6 w-6" src="./assets/coin.png" alt="coins" />
+          </div>
+
+          <button
+            class="flex items-center px-5 py-2.5 sm:px-8 sm:py-3 bg-[#00A63E] text-white font-semibold rounded-full gap-2 shrink-0"
+            type="button">
+            <span id="copy-counter">0</span>
+            <span>Copy</span>
+          </button>
+        </div>
+      </nav>
+    </header>
+  <!-- your scripts -->
+  <script src="./script.js"></script>
+</body>
+
+</html>
